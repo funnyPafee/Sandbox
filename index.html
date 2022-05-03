@@ -3,79 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>My sandbox site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table cellspacing="10">
-        <tr>
-            <td><img src="https://sun9-11.userapi.com/s/v1/if1/iynX8z62vq0rAhu5z7aXmLgncUwpFAI_GU7l28AYUMQTSJJ075f1xa5ZkigAYDHCF6CC5JoT.jpg?size=960x1280&quality=96&type=album" alt="Моё фото" width="200"/></td>
-            <td><h1>Мазеин Павел</h1>
-                <p><em>Интроверт и меланхолик</em></p>
-                <p>Пытаюсь освоить front-end разработку. Ключевое слово <strong>пытаюсь</strong>. Получается фигово.</p></td>
-        </tr>
-    </table>
-    <hr>
+    <div class="container">
+        <div class="info">
 
-    <h2>Соц. сети</h2>
-    <ol>
-        <li><a href="https://vk.com/funny_pafee" target="_blank">ВК</a></li>
-        <li><a href="https://www.youtube.com/channel/UC5nK0DZOUP1hHn8SxSYp74g" target="_blank">Youtube</a></li>
-    </ol>
-    <hr>
+            <img src="https://sun9-11.userapi.com/s/v1/if1/iynX8z62vq0rAhu5z7aXmLgncUwpFAI_GU7l28AYUMQTSJJ075f1xa5ZkigAYDHCF6CC5JoT.jpg?size=960x1280&quality=96&type=album" alt="Моё фото" class="avatar"/>
 
-    <h2>Увлечения</h2>
-    <ul type="square">
-        <li>Плавание</li>
-        <li>Горные лыжи</li>
-        <li>Анимэ</li>
-        <li>Настольные и компъютерные игры</li>
-        <li>Сингулярно-возмущенные задачи с переменными малыми параметрами</li>
-    </ul>
-    <hr>
+            <div class="info-text">
+                <h1>Мазеин Павел</h1>
+                <p>Интроверт и меланхолик</p>
+                <p>Пытаюсь освоить front-end разработку. Ключевое слово <strong>пытаюсь</strong>. Получается фигово.</p>
 
-    <h2>Опыт работы</h2>
-    <table border="2">
-        <tr></tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Года</th>
-        <tr>
-            <td>Компания Безопасность</td>
-            <td>Дурацкая</td>
-            <td>Какой-то год</td>
-        </tr>
-        <tr>
-            <td>Транстелеком</td>
-            <td>Тоже дурацкая</td>
-            <td>Опять какой-то год</td>
-        </tr>
-    </table>
-    <hr>
-    
-    <h2>Прохождение рейдов</h2>
-    <a href="youtube.html" target="_blank">Список рейдов</a>
-    <hr>
+                <h4>Соц. сети</h4>
+                
+                <a href="https://vk.com/funny_pafee" target="_blank">ВК</a>
+                |
+                <a href="https://www.youtube.com/channel/UC5nK0DZOUP1hHn8SxSYp74g" target="_blank">Youtube</a>
+            </div>
+            
+        </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите Ваше имя">
+                    
+        <div class="card bg-yellow">
+            <h2>Увлечения</h2>
+            <ol class="list">
+                <li>Плавание</li>
+                <li>Горные лыжи</li>
+                <li>Анимэ</li>
+                <li>Настольные и компъютерные игры</li>
+                <li>Сингулярно-возмущенные задачи с переменными малыми параметрами</li>
+            </ol>
+        </div>
 
-        <br>
+        
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">                
+                    <td>Компания Безопасность</td>
+                    <td>Дурацкая</td>
+                    <td>Какой-то год</td>
+                </tr>
+                <tr>
+                    <td>Транстелеком</td>
+                    <td>Какая-то</td>
+                    <td>Опять какой-то год</td>
+                </tr>
+                <tr>
+                    <td>Лучшая работа</td>
+                    <td>Приятная</td>
+                    <td>Когда-то</td>
+                </tr>
+                <tr>
+                    <td>IT soft</td>
+                    <td>Front-end dev</td>
+                    <td>В будущем</td>
+                </tr>
+            </table>
+        </div>
 
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите Ваш email">
+        
+        <div class="card bg-red">
+            <h2>Прохождение рейдов</h2>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=go6OrB437rg&t=1477s">Nier Automata</a></li>
+                <li><a href="https://www.youtube.com/watch?v=R0m4Gb9Zr_Q">Вечный дворец</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <div action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите Ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите Ваш email">
+                    </div>
+                </div>
 
-        <br>
+                <div class="form-group">
+                    <label for="text">Вашe сообщение:</label>
+                    <textarea id="text"></textarea>
+                </div>
 
-        <label for="text">Вашe сообщение:</label>
+                <input class="btn" type="submit" value="Поехали!">
+            </form>
+        </div>
 
-        <br>
-
-        <textarea id="text"></textarea>
-
-        <br>
-
-        <input type="submit" value="Поехали!">
-    </form>
+        <div class="position">
+            <div class="box"></div>
+        </div>
+        <!-- <div class="block1">1</div>
+        <div class="block2">2</div>
+        <div class="block3">3</div>
+        <div class="block4">4</div> -->
+    </div>
 </body>
 </html>
